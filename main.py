@@ -8,7 +8,7 @@ import statsmodels.api as sm
 from sklearn.metrics import mean_squared_error
 
 url = 'https://drive.google.com/file/d/1FyLouCoWaUqrVlMOTb4lGCBGHs_YNfOg/view?usp=sharing'
-df = pd.read_csv('https://drive.usercontent.google.com/download?id={}&export=download&authuser=0&confirm=t'.format(url.split('/')[-2]), sep = ';', delim_whitespace=True)
+df = pd.read_csv('https://drive.usercontent.google.com/download?id={}&export=download&authuser=0&confirm=t'.format(url.split('/')[-2]), delim_whitespace=True)
 
 
 st.title('')
