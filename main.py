@@ -9,6 +9,7 @@ from sklearn.metrics import mean_squared_error
 
 url = 'https://drive.google.com/file/d/1FyLouCoWaUqrVlMOTb4lGCBGHs_YNfOg/view?usp=sharing'
 df = pd.read_csv('https://drive.usercontent.google.com/download?id={}&export=download&authuser=0&confirm=t'.format(url.split('/')[-2]), sep = ';')
+df.columns = df.columns.str.strip()
 
 st.title('')
 st.write('Выберите входные данные:')
