@@ -7,7 +7,7 @@ import plotly.express as px
 import statsmodels.api as sm
 from sklearn.metrics import mean_squared_error
 
-df = pd.read_csv("/Users/parlorsky/Downloads/test_2.csv", sep=',')
+df = pd.read_csv("https://drive.google.com/file/d/1FyLouCoWaUqrVlMOTb4lGCBGHs_YNfOg", sep=',')
 
 st.title('')
 st.write('Выберите входные данные:')
